@@ -185,11 +185,11 @@ h4 { font-size: 15.5px; font-weight: 600; margin: 0 0 4px; }
 
 /* Education */
 .edu-item {
-  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;
   padding: 16px 0; border-bottom: 1px solid var(--line);
 }
 .edu-item:first-child { border-top: 1px solid var(--line); }
-.org { display: flex; align-items: center; gap: 16px; }
+.org { display: flex; align-items: flex-start; gap: 16px; }
 .logo {
   flex: none; width: 44px; height: 44px; padding: 7px;
   object-fit: contain; background: #fff;
@@ -201,6 +201,8 @@ h4 { font-size: 15.5px; font-weight: 600; margin: 0 0 4px; }
   color: var(--accent); background: var(--accent-soft); border-radius: 999px;
   vertical-align: 1px;
 }
+.event { margin: 8px 0 0 !important; color: var(--ink-2); font-size: 14.5px; }
+.event strong { color: var(--accent); font-weight: 600; }
 .roles { margin: 6px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 14.5px; }
 .roles li { margin-bottom: 2px; }
 .roles li::marker { color: var(--accent); }
@@ -246,3 +248,4 @@ h4 { font-size: 15.5px; font-weight: 600; margin: 0 0 4px; }
 }
 
 .edu-item > .muted { white-space: nowrap; }
+.edu-item > .muted { padding-top: 4px; }
